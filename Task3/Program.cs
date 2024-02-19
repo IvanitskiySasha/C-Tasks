@@ -1,18 +1,16 @@
 ﻿// Задача 3
 // Напишите программу, которая принимает на вход трёхзначное целое число
 // и на выходе показывает сумму первой и последней цифры этого числа.
-
 Console.Write("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 while (true)
-{
-    if ((num <= 999) && (num >= 100)) break;
+{ 
+    if (num <= 999 && num >= 100) break;
     Console.WriteLine("Введено НЕ трехзначное число: ");
     Console.Write("Введите трехзначное число: ");
     num = Convert.ToInt32(Console.ReadLine());
-
-}
+    }
 
 int num1 = num % 10;
 int num2 = num / 100;
